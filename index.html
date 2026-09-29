@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Town | Where Imagination & Joy Come to Play</title>
+  <meta name="description" content="Toy Town is your neighborhood paradise of handpicked toy cars, remote-control racers, dolls, soft plushies, pretend play sets, and building blocks.">
+  
+  <!-- Google Fonts: Fredoka for cheerful headings, Quicksand for clean body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet with #fed41e & #ec4d2d theme -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Canvas Confetti CDN for celebratory form submission -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Store announcement">
+    <div class="container announcement-content">
+      <div class="announcement-text">
+        <span>✨ <strong>Welcome to Toy Town:</strong> Explore our curated 20 favorite toys for all ages!</span>
+        <span class="badge-pill">Free Gift Wrapping Every Day 🎁</span>
+      </div>
+      <div class="announcement-contact">
+        <a href="tel:+918822593562"><i class="fa-solid fa-phone"></i> +91 8822593562</a>
+        <span class="divider">|</span>
+        <a href="#location"><i class="fa-solid fa-location-dot"></i> Guwahati, Near NH-37 (781029)</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <div class="logo-icon-box">
+          <i class="fa-solid fa-shapes logo-icon"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Toy <span class="text-accent">Town</span></span>
+          <span class="logo-tagline">YOUR HOMETOWN TOY PARADISE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#featured" class="nav-link">Our 20 Toys</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#hours" class="nav-link">Store Hours & Visit</a></li>
+          <li><a href="#testimonials" class="nav-link">Happy Families</a></li>
+          <li><a href="#contact" class="nav-link">Inquire & Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <i class="fa-solid fa-sparkles"></i> Toy Inquiry
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="logo-text">
+        <span class="logo-title">Toy <span class="text-accent">Town</span></span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="#home" class="drawer-link">Home</a></li>
+      <li><a href="#featured" class="drawer-link">Our 20 Toys</a></li>
+      <li><a href="#about" class="drawer-link">Our Story</a></li>
+      <li><a href="#hours" class="drawer-link">Store Hours & Visit</a></li>
+      <li><a href="#testimonials" class="drawer-link">Happy Families</a></li>
+      <li><a href="#contact" class="drawer-link">Inquire & Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block">Send Toy Inquiry</a>
+      <p class="drawer-phone"><i class="fa-solid fa-phone"></i> <a href="tel:+918822593562">+91 8822593562</a></p>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <!-- Floating Decorative Shapes -->
+      <div class="floating-shape shape-1" aria-hidden="true">🚗</div>
+      <div class="floating-shape shape-2" aria-hidden="true">🧸</div>
+      <div class="floating-shape shape-3" aria-hidden="true">🚂</div>
+      <div class="floating-shape shape-4" aria-hidden="true">✈️</div>
+      <div class="floating-shape shape-5" aria-hidden="true">🧱</div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-heart pulse"></i> Loved by 2,000+ local kids & families
+          </div>
+          <h1 class="hero-title">
+            Where <span class="highlight-red">Imagination</span> & <span class="highlight-yellow">Joy</span> Come to Play!
+          </h1>
+          <p class="hero-description">
+            Welcome to <strong>Toy Town</strong>! Step into a cheerful wonderland of high-speed toy cars, remote-control racers, beautiful dolls, cuddly teddy bears, creative role-play sets, and timeless building blocks.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#featured" class="btn btn-primary btn-lg shadow-bounce">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Explore Our 20 Toys
+            </a>
+            <a href="#hours" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-compass"></i> Visit Our Store
+            </a>
+          </div>
+
+          <!-- Trust Badges List -->
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>100% Non-Toxic & Safe</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-gift"></i>
+              <span>Free Gift Wrapping</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-car"></i>
+              <span>Open Race & Test Tracks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="hero-main-card">
+              <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=800&q=80" alt="Colorful toy car and play setup" class="hero-img">
+                <div class="hero-overlay-tag">
+                  <span class="live-pulse"></span> Open Today Until 7:00 PM
+                </div>
+              </div>
+              <div class="hero-card-footer">
+                <div class="rating-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="rating-text">4.9 / 5.0 (420+ Reviews)</span>
+                </div>
+                <p class="card-caption">"Toy Town is the happiest shop on the block. Kids never want to leave!"</p>
+              </div>
+            </div>
+
+            <!-- Floating perk cards -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon"><i class="fa-solid fa-cake-candles"></i></div>
+              <div>
+                <strong>Toy Town VIP Club</strong>
+                <small>Special treats on birthdays!</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon red"><i class="fa-solid fa-car-side"></i></div>
+              <div>
+                <strong>Try Before You Buy</strong>
+                <small>Free play tracks & test tables daily</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT PERKS STRIP -->
+    <section class="perks-strip">
+      <div class="container perks-grid">
+        <div class="perk-card">
+          <div class="perk-icon-wrap bg-red">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <div class="perk-text">
+            <h3>Complimentary Wrapping</h3>
+            <p>Every toy gift wrapped in vibrant festive paper with bows and custom tags at zero cost.</p>
+          </div>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-wrap bg-yellow">
+            <i class="fa-solid fa-car-burst"></i>
+          </div>
+          <div class="perk-text">
+            <h3>20 Handpicked Classics</h3>
+            <p>From speedy RC cars to doll houses and doctor sets — tested and kid-approved.</p>
+          </div>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-wrap bg-blue">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <div class="perk-text">
+            <h3>Personal Toy Shopper</h3>
+            <p>Not sure what to pick? Our friendly staff loves giving tailored recommendations by age.</p>
+          </div>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-wrap bg-purple">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="perk-text">
+            <h3>Quick Curbside Pickup</h3>
+            <p>Order or reserve ahead! We'll box your toys and bring them right out to your car.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 20 TOYS CATALOG SECTION -->
+    <section class="featured-section" id="featured">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-shapes"></i> Complete Toy Town Collection</div>
+          <h2 class="section-title">Explore Our 20 Favorite Toys</h2>
+          <p class="section-subtitle">
+            From zooming vehicles and high-speed RC cars to doll houses, plush teddy bears, and pretend doctor sets. Click "Quick View" on any toy to inspect specs or reserve in-store!
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="category-filters">
+          <button class="filter-btn active" data-category="all">
+            <i class="fa-solid fa-shapes"></i> All 20 Toys
+          </button>
+          <button class="filter-btn" data-category="vehicles">
+            <i class="fa-solid fa-car-side"></i> 🚗 Vehicles & Wheels (10)
+          </button>
+          <button class="filter-btn" data-category="dolls">
+            <i class="fa-solid fa-child-dress"></i> 👗 Dolls & Houses (3)
+          </button>
+          <button class="filter-btn" data-category="plush">
+            <i class="fa-solid fa-paw"></i> 🧸 Plush & Soft (2)
+          </button>
+          <button class="filter-btn" data-category="pretend">
+            <i class="fa-solid fa-utensils"></i> 🍳 Pretend Play Sets (4)
+          </button>
+          <button class="filter-btn" data-category="blocks">
+            <i class="fa-solid fa-cubes"></i> 🧱 Building Blocks (1)
+          </button>
+        </div>
+
+        <!-- Toy Cards Grid (20 items rendered via app.js) -->
+        <div class="toys-grid" id="toysGrid">
+          <!-- Populated by app.js -->
+        </div>
+
+        <div class="featured-footer-cta">
+          <p>Looking for a specific color edition, bulk party bags, or custom gift wrapping request?</p>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-clipboard-question"></i> Ask About Custom Orders & Holds
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORE EXPERIENCE & ABOUT US SECTION -->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="about-image-column">
+          <div class="about-image-frame">
+            <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=800&q=80" alt="Kids playing happily with toys in Toy Town" class="about-img main-about">
+            <div class="experience-card">
+              <div class="experience-icon"><i class="fa-solid fa-store"></i></div>
+              <div>
+                <strong>Over 12 Years of Smiles</strong>
+                <p>Toy Town has been a local family staple since 2014.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-column">
+          <div class="section-tag"><i class="fa-solid fa-heart"></i> Our Story</div>
+          <h2 class="section-title">Toy Town: Built for Real Play & Shared Giggles</h2>
+          <p class="about-intro">
+            At Toy Town, we believe toys should spark imagination, active movement, and screen-free discovery.
+          </p>
+          <p class="about-body">
+            Whether your little one is racing remote-control cars across the living room carpet, performing surgery with their doctor set, hosting an afternoon tea party, or constructing towering wooden castles — our 20 handpicked classics are tested and built for lasting memories.
+          </p>
+
+          <div class="feature-bullets">
+            <div class="bullet-item">
+              <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h4>Tested for Pure Hands-On Fun</h4>
+                <p>Every toy in our 20-item collection stimulates tactile exploration, creativity, and cooperative play.</p>
+              </div>
+            </div>
+
+            <div class="bullet-item">
+              <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h4>Hands-On In-Store Play Track</h4>
+                <p>Bring your kids by to test drive vehicles, arrange doll house furniture, and explore block sets.</p>
+              </div>
+            </div>
+
+            <div class="bullet-item">
+              <div class="bullet-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h4>Free 48-Hour Toy Holds</h4>
+                <p>Found the perfect gift online? Send a quick message and we'll keep it safe behind the counter for you!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-row">
+            <div class="stat-box">
+              <span class="stat-number">20</span>
+              <span class="stat-label">Handpicked Classics</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">15,000+</span>
+              <span class="stat-label">Happy Children</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Child Safety Tested</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORE HOURS & LOCATION SECTION -->
+    <section class="hours-location-section" id="hours">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-door-open"></i> Visit Toy Town</div>
+          <h2 class="section-title">Store Hours & Location</h2>
+          <p class="section-subtitle">
+            We are conveniently located right in town with free parking behind the store, wide stroller aisles, and friendly staff ready to help.
+          </p>
+        </div>
+
+        <div class="hours-location-grid">
+          <!-- Store Hours Card -->
+          <div class="info-card hours-card">
+            <div class="card-top-header">
+              <div class="icon-bubble"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h3>Operating Hours</h3>
+                <div id="liveStatusBadge" class="live-status-pill open">
+                  <span class="status-dot"></span> Checking store status...
+                </div>
+              </div>
+            </div>
+
+            <ul class="hours-list" id="hoursList">
+              <li data-day="1">
+                <span class="day-name">Monday</span>
+                <span class="day-time">10:00 AM – 7:00 PM</span>
+              </li>
+              <li data-day="2">
+                <span class="day-name">Tuesday</span>
+                <span class="day-time">10:00 AM – 7:00 PM</span>
+              </li>
+              <li data-day="3">
+                <span class="day-name">Wednesday</span>
+                <span class="day-time">10:00 AM – 7:00 PM</span>
+              </li>
+              <li data-day="4">
+                <span class="day-name">Thursday</span>
+                <span class="day-time">10:00 AM – 7:00 PM</span>
+              </li>
+              <li data-day="5">
+                <span class="day-name">Friday</span>
+                <span class="day-time">10:00 AM – 8:00 PM <small class="late-tag">Late Night Fun</small></span>
+              </li>
+              <li data-day="6">
+                <span class="day-name">Saturday</span>
+                <span class="day-time">9:00 AM – 7:00 PM <small class="story-tag">Race Track 10AM</small></span>
+              </li>
+              <li data-day="0">
+                <span class="day-name">Sunday</span>
+                <span class="day-time closed-text"><span class="closed-pill">Closed</span> (Holiday)</span>
+              </li>
+            </ul>
+
+            <div class="holiday-note">
+              <i class="fa-solid fa-bell"></i>
+              <span>Holiday hours may differ. Call ahead on federal holidays or during snow days!</span>
+            </div>
+          </div>
+
+          <!-- Location & Map Card -->
+          <div class="info-card location-card" id="location">
+            <div class="card-top-header">
+              <div class="icon-bubble"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h3>Find Toy Town</h3>
+                <p class="card-subtext">Free parking lot & stroller ramp entrance</p>
+              </div>
+            </div>
+
+            <!-- Stylized Map Visual -->
+            <div class="map-container">
+              <div class="map-visual-placeholder">
+                <div class="map-pin-pulse">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="map-floating-info">
+                  <strong>Toy Town Shop</strong>
+                  <p>Guwahati, Near NH-37 - 781029</p>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Guwahati+Near+NH37+781029" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-map">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-details-list">
+              <div class="detail-row">
+                <i class="fa-solid fa-map-pin"></i>
+                <div>
+                  <strong>Address:</strong>
+                  <p>Guwahati, Near NH-37, Assam - 781029</p>
+                </div>
+              </div>
+
+              <div class="detail-row">
+                <i class="fa-solid fa-square-parking"></i>
+                <div>
+                  <strong>Parking & Accessibility:</strong>
+                  <p>Free 2-hour parking lot behind the shop. Stroller friendly wide aisles & ramp entrance.</p>
+                </div>
+              </div>
+
+              <div class="detail-row">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div>
+                  <strong>Direct In-Store Phone:</strong>
+                  <p><a href="tel:+918822593562" class="phone-link">+91 8822593562</a> (Call / WhatsApp)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-comments"></i> Real Community Love</div>
+          <h2 class="section-title">Words from Happy Parents & Kids</h2>
+          <p class="section-subtitle">
+            Here's why local families love shopping at Toy Town.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "We bought the Remote-Control Car and the Wooden Train for our sons. The quality is exceptional, and the staff wrapped them up with bright ribbons right on the spot!"
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar bg-yellow">SM</div>
+              <div>
+                <strong>Sarah Miller</strong>
+                <small>Mom of two boys</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card featured-testimonial">
+            <div class="featured-badge-pill">Neighborhood Favorite</div>
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "Toy Town is what a toy store should be. Kids can test cars on the ramp, hold the teddy bears, and the staff is genuinely kind. Best shop in town!"
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar bg-red">DK</div>
+              <div>
+                <strong>David & Liam K.</strong>
+                <small>Frequent weekend visitors</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "The Doll House and the Kitchen Set we purchased have given our daughter endless hours of imaginative play. Heirloom quality and friendly prices."
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar bg-yellow">EL</div>
+              <div>
+                <strong>Elena Rodriguez</strong>
+                <small>Preschool Teacher & Mom</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOY INQUIRY & CONTACT FORM SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-intro">
+            <div class="section-tag light"><i class="fa-solid fa-paper-plane"></i> Quick Inquiry & Holds</div>
+            <h2 class="contact-title">Have a Question or Want to Hold a Toy?</h2>
+            <p class="contact-desc">
+              Whether you want to check if a specific toy is currently in stock, reserve a gift for pickup, or inquire about party favors — drop us a message below!
+            </p>
+
+            <div class="contact-perks-box">
+              <div class="cp-item">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Fast response: We usually reply within 2 business hours!</span>
+              </div>
+              <div class="cp-item">
+                <i class="fa-solid fa-box-open"></i>
+                <span>We can hold toys behind the counter for up to 48 hours.</span>
+              </div>
+              <div class="cp-item">
+                <i class="fa-solid fa-gift"></i>
+                <span>Need free gift wrapping? Just mention it in your message.</span>
+              </div>
+            </div>
+
+            <div class="contact-quick-info">
+              <p><strong><i class="fa-solid fa-envelope"></i> Email Us:</strong> <a href="mailto:sonu0429@gmail.com" style="color: #fed41e;">sonu0429@gmail.com</a></p>
+              <p><strong><i class="fa-solid fa-phone"></i> Call / WhatsApp:</strong> <a href="https://wa.me/918822593562" target="_blank" style="color: #25d366;">+91 8822593562</a></p>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="toyInquiryForm" class="inquiry-form" novalidate>
+              <h3 class="form-title">Send a Toy Town Inquiry</h3>
+              <p class="form-subtitle">Fill in the details below and our team will get right back to you!</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName">Your Full Name <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="userName" name="userName" placeholder="e.g. Jessica Adams" required>
+                  </div>
+                  <span class="field-error" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Email Address <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="jessica@example.com" required>
+                  </div>
+                  <span class="field-error" id="emailError">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userPhone">Phone Number (Optional)</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="e.g. +91 98765 43210">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryType">Inquiry Type</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-tag"></i>
+                    <select id="inquiryType" name="inquiryType">
+                      <option value="stock">Check Item In-Stock Status</option>
+                      <option value="hold">Hold / Reserve Item for Pickup</option>
+                      <option value="recommendation">Birthday Gift Recommendation</option>
+                      <option value="party">Party Favors / Bulk Order</option>
+                      <option value="other">General Question</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="toyInterest">Toy / Item You Are Interested In</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-gift"></i>
+                  <input type="text" id="toyInterest" name="toyInterest" placeholder="e.g. Remote-Control Car, Doll House, Teddy Bear...">
+                </div>
+                <small class="helper-text">Tip: Clicking "Quick View" &gt; "Inquire" on any toy above auto-fills this field!</small>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage">Your Message / Special Instructions <span class="required">*</span></label>
+                <textarea id="userMessage" name="userMessage" rows="4" placeholder="Let us know child's age, pickup dates, or any special requests (like gift wrapping color preferences)..." required></textarea>
+                <span class="field-error" id="messageError">Please enter your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+                <span class="btn-text"><i class="fa-brands fa-whatsapp"></i> Book & Send on WhatsApp</span>
+                <span class="btn-spinner"><i class="fa-solid fa-spinner fa-spin"></i> Preparing WhatsApp...</span>
+              </button>
+            </form>
+
+            <!-- Success Confirmation State (Revealed dynamically) -->
+            <div class="form-success-box" id="formSuccessBox">
+              <div class="success-icon-wrap bg-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h3>Booking Sent to WhatsApp! 🎈</h3>
+              <p>Your details have been sent to Toy Town's official WhatsApp (<strong>+91 8822593562</strong>). If WhatsApp didn't open automatically, tap the button below:</p>
+              <div class="success-details-pill" id="successDetailsPill"></div>
+              <div class="success-action-group">
+                <a href="#" id="directWhatsAppBtn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i> Open in WhatsApp (+91 8822593562)
+                </a>
+                <button class="btn btn-secondary btn-sm" id="resetFormBtn">
+                  <i class="fa-solid fa-arrow-rotate-left"></i> Send Another Booking
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-circle-question"></i> Helpful Answers</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you offer free gift wrapping on all toys?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, 100% complimentary! We have cheerful wrapping paper with festive bows and custom gift tags for birthdays and celebrations.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I reserve one of the 20 toys before driving over?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. Use our inquiry form above or message us on WhatsApp / Call at +91 8822593562. We will set the item aside at the front desk for up to 48 hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are all your toys safe and non-toxic?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Every toy we carry meets or exceeds ASTM and CPSIA child safety standards. We emphasize BPA-free plastics, water-based paints, and rounded kid-safe designs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is your return & exchange policy?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Unopened items in original packaging can be returned or exchanged within 30 days with a receipt. Gift receipts are also welcome for store credit or exchange!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / BIRTHDAY CLUB CALLOUT -->
+    <section class="club-banner">
+      <div class="container club-inner">
+        <div class="club-text">
+          <span class="badge-accent">🎂 VIP Toy Town Club</span>
+          <h2>Join Our Birthday Toy Club</h2>
+          <p>Register your child’s birthday month to receive a special 20% off coupon, a free in-store mystery toy treat, and early invites to weekend events!</p>
+        </div>
+        <form class="club-form" id="clubForm" onsubmit="event.preventDefault(); window.handleClubSubmit();">
+          <input type="email" placeholder="Enter parent's email address..." required id="clubEmail">
+          <button type="submit" class="btn btn-warning">Join Free <i class="fa-solid fa-star"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-backdrop" id="toyModal">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-message" id="toastMessage">Success</span>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <div class="logo-icon-box">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <span class="logo-title">Toy <span class="text-accent">Town</span></span>
+        </div>
+        <p class="footer-about">
+          Your neighborhood paradise of whimsical toys, creative learning, and family smiles. Dedicated to joyful, imaginative play since 2014.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Our 20 Toys</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#hours">Store Hours & Directions</a></li>
+          <li><a href="#contact">Contact & Stock Inquiries</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Toy Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#featured" onclick="window.filterToys('vehicles')">🚗 Vehicles & Wheels (10)</a></li>
+          <li><a href="#featured" onclick="window.filterToys('dolls')">👗 Dolls & Houses (3)</a></li>
+          <li><a href="#featured" onclick="window.filterToys('plush')">🧸 Plush & Soft Toys (2)</a></li>
+          <li><a href="#featured" onclick="window.filterToys('pretend')">🍳 Pretend Play Sets (4)</a></li>
+          <li><a href="#featured" onclick="window.filterToys('blocks')">🧱 Building Blocks (1)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Visit Toy Town</h4>
+        <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Guwahati, Near NH-37, 781029</p>
+        <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> <a href="tel:+918822593562">+91 8822593562</a></p>
+        <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> <a href="mailto:sonu0429@gmail.com">sonu0429@gmail.com</a></p>
+        <div class="store-badge-card">
+          <span class="store-open-indicator"></span> <strong>Open 6 Days a Week (Mon – Sat)</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> Toy Town LLC. All rights reserved.</p>
+        <p class="footer-credits">Made with ❤️ for imaginative kids & happy parents everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/918822593562?text=Hello%20Toy%20Town!%20I%20have%20an%20inquiry%20about%20your%20toys." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat with Toy Town on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-badge-pulse"></span>
+    <span class="whatsapp-tooltip">Chat with us on WhatsApp!</span>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
